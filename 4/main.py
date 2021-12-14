@@ -45,8 +45,8 @@ for i, b in enumerate(boards):
 bdim = len(b)
 rows = [list(range(i * bdim, i * bdim + bdim, 1)) for i in range(bdim)]
 cols = [list(range(i, i + bdim ** 2, bdim)) for i in range(bdim)]
-diag1 = [i * (bdim + 1) for i in range(bdim)]
-diag2 = [(i+1) * bdim - i - 1 for i  in range(bdim)]
+# diag1 = [i * (bdim + 1) for i in range(bdim)]
+# diag2 = [(i+1) * bdim - i - 1 for i  in range(bdim)]
 win_conds = rows + cols  # WTF WE'RE NOT PLAYING DIAGONALS?
 
 play_p1(nums=nums, boards=boards, win_conds=win_conds)
